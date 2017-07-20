@@ -1,11 +1,11 @@
 package models;
 
 public class Vehicle {
-    public int year;
-    public String brand;
-    public String model;
-    public int miles;
-    public int price;
+    private int year;
+    private String brand;
+    private String model;
+    private int miles;
+    private int price;
 
     public boolean worthBuying(int maxPrice){
         return (price < maxPrice);
@@ -17,5 +17,25 @@ public class Vehicle {
         this.model = model;
         this.miles = miles;
         this.price = price;
+    }
+
+    public int getPrice() {
+        return price;
+    }
+
+    public int getYear() {
+        return year;
+    }
+
+    public String getBrand() {
+        return brand;
+    }
+
+    public String getModel() {
+        return model;
+    }
+
+    public int getMiles() {
+        return miles;
     }
 }
